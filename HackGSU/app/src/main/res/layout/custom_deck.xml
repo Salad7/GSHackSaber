@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:elevation="5dp"
+    android:background="@drawable/myrect"
+    style="@style/CustomDeck">
+
+    <TextView
+        android:text="Parking Deck :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textDeckName"
+        android:layout_alignLeft="@+id/textDeckName"
+        android:layout_alignStart="@+id/textDeckName"
+        android:id="@+id/textDeckIdentifier" />
+
+    <TextView
+        android:text="Deck Type :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/textTypeIden"
+        android:layout_alignBaseline="@+id/availIden"
+        android:layout_alignBottom="@+id/availIden"
+        android:layout_toRightOf="@+id/availIden"
+        android:layout_toEndOf="@+id/availIden" />
+
+    <TextView
+        android:text="Spots Left :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/availIden"
+        android:layout_above="@+id/textDeckNum"
+        android:layout_toRightOf="@+id/textDeckIdentifier"
+        android:layout_toEndOf="@+id/textDeckIdentifier"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:text="Woodward"
+        style="@style/TextStyle"
+        android:id="@+id/textDeckName"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+
+        android:id="@+id/textDeckNum"
+        android:text="235"
+        style="@style/TextStyle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Communter A F/S"
+        style="@style/TextStyle"
+        android:id="@+id/textType"
+        android:layout_below="@+id/textDeckNum"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
